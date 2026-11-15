@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "知识库面板 (dsh-md-panel)",
+    "description": "右侧栏的知识库入口：实时同步本地 Markdown 知识库，文件树 / 全文搜索 / frontmatter 徽章 / 大纲与反向链接一屏看全，选中段落或整篇一键送进对话解读。"
+  }
+}

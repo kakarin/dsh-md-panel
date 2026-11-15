@@ -1,0 +1,13 @@
+# dsh-md-panel 的 bundle 补丁层：把本插件作为一行插进 profile 的条目列表。
+#
+# name 必须是【裸包名】dsh-md-panel —— dsh-web 的客户端模块扫描只解析裸包名行，
+# 靠这行找到本包的 package.json、读到 dsh.client 字段，才会把 lib/client.js
+# （右侧栏那个「知识库」面板）服务给网页。
+#
+# config.root 是你的知识库绝对路径；不填则用 ~/KnowledgeBase（或用环境变量
+# DSH_KB_ROOT 指定）。轮询间隔默认 2000ms。
+- insert:
+    - id: md-panel
+      name: dsh-md-panel
+      config:
+        pollIntervalMs: 2000
